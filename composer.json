@@ -1,0 +1,13 @@
+{
+    "name": "muhsinashoma/example",
+    "description": "This is package for learning",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload" : {
+        "psr-4":{
+            "Example\\PackageDevelopment" : "src/"
+        }
+    }
+}
