@@ -31,6 +31,19 @@ class Example{
         return time().rand();
     }
 
+    /**
+     * File Upload
+     */
+
+    public static function file($file, $path = '/'){
+
+        //File Info // Temporary Link have to fin
+
+        $tmp_name =$file['tmp_name'];
+        $file_name = self::randname('jpg');
+        move_uploaded_file($tmp_name, $path . $file_name );
+    }
+
 
 }
 
